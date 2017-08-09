@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice TestNG">
+	<test name="Functional Test">
+		<classes>
+			<class name="com.first.pack.Script_RunningClass">
+
+				<methods>
+					<include name="firstTest" />
+					<include name="forthTest" />
+					<include name="tenTest" />
+
+				</methods>
+			</class>
+			<class name="com.second.pack.Second_Class">
+
+				<methods>
+					<include name="secondClass1" />
+					<include name="secondClass2" />
+
+				</methods>
+			</class>
+			<class name="com.third.pack.Third_class">
+
+				<methods>
+					<include name="ThirdClass1" />
+					<include name="ThirdClass3" />
+
+				</methods>
+				<parameter name="browser" value="Firefox"/>
+			</class>
+			<class name="com.first.pack.Common_property">
+			<parameter name="browser" value="chrome"/>
+			</class>
+			<class name="com.first.pack.Common_property">
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice TestNG">
+	<!-- <test name="Functional Test">
+		<classes>
+			<class name="com.first.pack.Script_RunningClass">
+				<methods>
+					<include name="firstTest" />
+					<include name="forthTest" />
+					<include name="tenTest" />
+					<include name="sixTest" />
+					<include name="eightTest" />testng.xml
+			"testng.xml"	</methods>
+			</class>
+		</classes>
+	</test> < -->
+	<test name="Smoke Test">
+		<classes>
+			<class name="com.first.pack.Script_RunningClass">
+				<methods>
+					<include name="secondTest" />
+					<include name="threeTest" />
+					<include name="fifth" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Regration Test">
+		<classes>
+			<class name="com.first.pack.Script_RunningClass">
+				<methods>
+					<include name="nineTest" />
+					<include name="sevenTest" />
+					<include name="firstTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

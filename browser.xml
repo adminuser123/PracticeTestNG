@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice TestNG" parallel= "tests">
+	<test name="Firefox browser Test">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.first.pack.Common_property">
+			</class>
+		</classes>
+	</test>
+	<test name="Chrome browser Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.first.pack.Common_property">
+			</class>
+		</classes>
+
+	</test>
+	<test name="IE browser Test">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="com.first.pack.Common_property">
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+			

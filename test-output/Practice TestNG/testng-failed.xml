@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Practice TestNG]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="Firefox browser Test">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.first.pack.Common_property"/>
+    </classes>
+  </test> <!-- Firefox browser Test -->
+  <test name="Chrome browser Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.first.pack.Common_property"/>
+    </classes>
+  </test> <!-- Chrome browser Test -->
+  <test name="IE browser Test">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.first.pack.Common_property"/>
+    </classes>
+  </test> <!-- IE browser Test -->
+  <test name="Firefox browser Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.first.pack.Common_property">
+        <methods>
+          <include name="browserTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.first.pack.Common_property -->
+    </classes>
+  </test> <!-- Firefox browser Test(failed) -->
+  <test name="IE browser Test(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.first.pack.Common_property">
+        <methods>
+          <include name="browserTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.first.pack.Common_property -->
+    </classes>
+  </test> <!-- IE browser Test(failed) -->
+  <test name="Chrome browser Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.first.pack.Common_property">
+        <methods>
+          <include name="browserTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.first.pack.Common_property -->
+    </classes>
+  </test> <!-- Chrome browser Test(failed) -->
+</suite> <!-- Failed suite [Practice TestNG] -->
